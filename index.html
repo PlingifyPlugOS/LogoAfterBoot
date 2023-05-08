@@ -8,21 +8,21 @@
     <title>Logo AFter Boot</title>
 </head>
 <body>
-    <div id='showMe'>
-<center><img src="https://imagetolink.com/ib/pjYtbX00Cg.png"  width="100%" height="100%">  </center> </div>
+
+<center><div class="img"><img src="https://imagetolink.com/ib/pjYtbX00Cg.png"  width="100%" height="100%"></div>  </center>
 </body>
 <style>
-#showMe {
-  animation: cssAnimation 0s .5s forwards;
-  visibility: hidden;
-}
 
-@keyframes cssAnimation {
-  to   { visibility: visible; }
-}
 
 body{
     background-color: black;
+}
+
+.img{ animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
     </style>
