@@ -9,16 +9,28 @@
 </head>
 <body>
     <div id='showMe'>
+      <div class="fade-in-text">
       <h1>‎</h1>
       <h1>‎</h1>
       <h1>‎</h1>
       <h1>‎</h1>
       <font style="color: #fff;">
-<center><h1 style="font-family: Arial;"> PlingifyPlugOS Online</h1>  </center> </div>
+<center><h1 style="font-family: Arial;"> PlingifyPlugOS Online</h1>  </center> </div></div>
 </font></body>
 <style>
+
+.fade-in-text {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
 #showMe {
-  animation: cssAnimation 0s 2s forwards;
+  animation: cssAnimation 0s 1s forwards;
   visibility: hidden;
 }
 
